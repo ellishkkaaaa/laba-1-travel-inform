@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Моя сторінка</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/6554/6554183.png" alt="Logo" class="logo-img">
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Будь ласка, введіть запит для пошуку...">
+        <button onclick="searchGoogle()">🔍</button>
+    </div>
+
+    <h1>Подорожуй з нами!</h1>
+    <h2>Обирайте landmarks за власним бажанням🌍✈️</h2>
+        
+    <nav>
+        <div class="button-container">
+            <a href="https://zruchno.travel/Direction/List?lang=ua" class="button">Напрямки</a>
+            <a href="https://zruchno.travel/FiftyTwoWeekends/RemoteController?lang=ua" class="button">Вікенди</a>
+            <a href="https://zruchno.travel/Publications/List?lang=ua" class="button">Travel-журнал</a>
+            <a href="https://zruchno.travel/ObjectSearch?ObjectType=6&Cat=17&lang=ua" class="button">Тури</a>
+        </div>
+    </nav>
+    
+    <h2>Галерея</h2>
+    <div class="gallery">
+        <div><img src="https://pohcdn.com/guide/sites/default/files/styles/node__blog_post__bp_banner/public/2020-04/Berlin.jpg" alt="Image 1"><p>Берлін</p></div>
+        <div><img src="https://trendhero.io/ru/wp-content/uploads/sites/2/2022/02/trevel-blogery-instagram.jpeg" alt="Image 2"><p>Ванкувер</p></div>
+        <div><img src="https://img.tsn.ua/cached/966/tsn-c4a14e908bc0d57dbb04383f58c6fbeb/thumbs/x/1e/86/5f31a9ea1b0d3b476bbe1020418c861e.jpeg" alt="Image 3"><p>Кіото</p></div>
+        <div><img src="https://zakavto.com.ua/images/data/Colosseum-Rome.jpg" alt="Image 4"><p>Рим</p></div>
+        <div><img src="https://www.nyctourism.com/_next/image/?url=https://images.ctfassets.net/1aemqu6a6t65/5Db8x7mrT6LRyn1J4wFWWb/e28cb4699f2b7f63737701a4e9362308/Times-Square-Manhattan-NYC-Photo-Lucia-Vazquez.jpg?fm=webp&w=1200&q=75" alt="Image 6"><p>Нью-Йорк</p></div>
+        <div><img src="https://media.istockphoto.com/id/1390815938/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BC%D1%96%D1%81%D1%82%D0%BE-%D1%82%D0%BE%D0%BA%D1%96%D0%BE-%D0%B2-%D1%8F%D0%BF%D0%BE%D0%BD%D1%96%D1%97.jpg?s=612x612&w=0&k=20&c=U7Uz37VuhzCkI9csum6QfJxoclwGaL5CjUH6-bsJ7mY=" alt="Image 7"><p>Токіо</p></div>
+        <div><img src="https://www.moyaeuropa.com.ua/wp-content/uploads/2014/05/barcelona-%D0%B1%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0-sagrada-familia_c-1024x683.jpg" alt="Image 8"><p>Барселона</p></div>
+        <div><img src="https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/paris/shutterstock_1899827659%20edit?_a=BAVARSAP0" alt="Image 9"><p>Париж</p></div>
+    </div>
+
+    <div class="word-block">
+        <span class="main-word" id="mainWord">Подорожі</span>
+        <div class="vertical-line" id="verticalLine"></div>
+        <div class="word-links" id="wordLinks">
+            <a href="https://www.moyaeuropa.com.ua/" class="word-item">Європа</a>
+            <a href="https://andy-travel.com.ua/region/aziya" class="word-item">Азія</a>
+            <a href="https://joinup.ua/uk/strany/usa/" class="word-item">Америка</a>
+            <a href="https://www.kalipsoua.com/ua/africa" class="word-item">Африка</a>
+            <a href="https://kycheriavuiguide.com.ua/okeanija" class="word-item">Океанія</a>
+        </div>
+    </div>
+    
+    <h2>Контактна форма</h2>
+    <form class="contact-form">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Надіслати" class="button">
+    </form>
+
+    <section>
+        <h2>Шукай і обирай</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.920917291268!2d144.9632808157333!3d-37.81361097975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43d9f126a5%3A0x2e7397d3be7e0ef8!2sFederation+Square!5e0!3m2!1sen!2sau!4v1614305305114!5m2!1sen!2sau" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>Зроблено мною з ❤️</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
